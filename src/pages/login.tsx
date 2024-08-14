@@ -11,7 +11,7 @@ export const Login = () => {
 
   
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
     let inputValue = e.target.value;
     const lastChar = inputValue.slice(-1);
@@ -25,7 +25,7 @@ export const Login = () => {
 
   };
 
-  const handlePassChange = (e) => {
+  const handlePassChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassValue(e.target.value);
 
   };

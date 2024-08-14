@@ -13,7 +13,7 @@ export const Data = () => {
   const [phoneValue, setPhoneValue] = useState('');
   const [selectedStatusValue, setSelectedStatusValue] = useState('phone');
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
     let inputValue = e.target.value;
     const lastChar = inputValue.slice(-1);
@@ -26,28 +26,28 @@ export const Data = () => {
     setPhoneValue(formattedPhone);
 
   };
-  const handleSelectedChange = (e) => {
+  const handleSelectedChange = () => {
     setSelectedStatusValue((prevValue) => (prevValue === 'phone' ? 'email' : 'phone'));
 
   };
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmailValue(e.target.value)
 
   };
 
-  const handleFullNameChange = (e) => {
+  const handleFullNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFullNameValue(e.target.value);
 
   };
-  const handleBirthDateChange = (e) => {
+  const handleBirthDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setBirthDateValue(e.target.value);
 
   };
 
   const navigate = useNavigate();
 
-  function formatPhoneNumber(value) {
+  function formatPhoneNumber(value: string) {
     if (!value) return value;
     const phone = value.replace(/[^\d]/g, '');
     const phoneLength = phone.length;
@@ -63,7 +63,7 @@ export const Data = () => {
       <div className="max-w-80 flex flex-col gap-6">
         <div className="flex flex-col max-w-sm justify-center gap-9">
           <h1 className="text-custom-dark-blue font-medium mb-3">Lorem Ipsum</h1>
-          <p className="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry and typesetting industry.</p>
+          <p className="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry and typesetting industry.</p>
 
         </div>
         <Input

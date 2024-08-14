@@ -4,9 +4,9 @@ import { Dots } from './Dots';
 import { Slide1 } from './Slide1';
 import { Slide2 } from './Slide2';
 // import Login from './Login';
-import { Login } from './pages/Login';
-import { Main } from './pages/Main';
-import {Data} from './pages/Data'
+import { Login } from './pages/login';
+import { Main } from './pages/main';
+import {Data} from './pages/data'
 // import Data from './Data';
 import {OTP} from './pages/otp';
 // import Loader from './Loader';
