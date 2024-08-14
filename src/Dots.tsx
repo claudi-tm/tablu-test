@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export const Dots = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <div className="flex justify-center mt-4">
