@@ -26,7 +26,7 @@ export const  Input = ({ type, placeholder, value, onChange }: InputProps) => {
     <div className="relative ">
       <div className={`
           flex border rounded-lg px-4 py-2 gap-3
-          ${isFocused || value ? 'border-blue-500' : 'border-gray-300'}
+          ${isFocused || value ? 'border-custom-orange' : 'border-gray-300'}
         `}>
         {type === "phone" ? (
           <>
@@ -68,7 +68,7 @@ export const  Input = ({ type, placeholder, value, onChange }: InputProps) => {
       <label className={`
           absolute left-3 transition-all duration-500 ease-in-out
           ${isFocused || value
-          ? '-top-2 text-xs text-blue-500 bg-white/85 px-1'
+          ? '-top-2 text-xs text-custom-dark-blue bg-white/85 px-1'
           : 'top-2 text-gray-500'
         }
         `}>
