@@ -30,7 +30,7 @@ export const Login = () => {
 
   };
 
-  function formatPhoneNumber(value) {
+  function formatPhoneNumber(value:string) {
     if (!value) return value;
     const phone = value.replace(/[^\d]/g, '');
     const phoneLength = phone.length;
